@@ -1,5 +1,5 @@
 // index.js
-function copyObject(obj) {
+function copyObjectDeep(obj) {
   if (obj === null || typeof obj !== "object") {
     return obj;
   }
@@ -7,7 +7,7 @@ function copyObject(obj) {
   if (Array.isArray(obj)) {
     const arrCopy = [];
     for (let i = 0; i < obj.length; i++) {
-      arrCopy[i] = copyObject(obj[i]);
+      arrCopy[i] = copyObjectDeep(obj[i]);
     }
     return arrCopy;
   }
@@ -15,11 +15,11 @@ function copyObject(obj) {
   const objCopy = {};
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
-      objCopy[key] = copyObject(obj[key]);
+      objCopy[key] = copyObjectDeep(obj[key]);
     }
   }
 
   return objCopy;
 }
 
-module.exports = copyObject;
+module.exports = copyObjectDeep;

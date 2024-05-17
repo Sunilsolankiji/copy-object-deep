@@ -1,5 +1,5 @@
 // test.js
-const copyObject = require('./index');
+const copyObjectDeep = require('./index');
 
 const original = {
   name: 'John',
@@ -11,7 +11,7 @@ const original = {
   }
 };
 
-const copy = copyObject(original);
+const copy = copyObjectDeep(original);
 
 // Modify the copy
 copy.name = 'Doe';

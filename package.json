@@ -1,5 +1,5 @@
 {
-  "name": "copyobject",
+  "name": "copy-object-deep",
   "version": "1.0.0",
   "description": "A package to create a deep copy of an object",
   "main": "index.js",
