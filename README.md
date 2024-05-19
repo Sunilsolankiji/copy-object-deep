@@ -8,6 +8,7 @@ You can install the package using npm:
 
 ```sh
 npm install copy-object-deep
+```
 
 ## Usage
 
@@ -45,22 +46,22 @@ console.log(clonedObject);
 // }
 ```
 
-##API
+### API
 
-##`deepClone(object)`
+### `deepClone(object)`
 Creates a deep copy of the given object.
 
-##Parameters
+### Parameters
 object (Object): The object to be cloned.
 
-##Returns
+### Returns
 Object: A deep copy of the original object.
 
-##License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Contributing
+### Contributing
 If you would like to contribute to this project, please submit a pull request or open an issue.
 
-##Author
-Sunil Solanki
+### Author
+**Sunil Solanki**
